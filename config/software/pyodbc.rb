@@ -8,7 +8,6 @@ dependency "pip"
 if linux?
   dependency "unixodbc"
 end
-dependency "unixodbc"
 
 build do
   ship_license "https://raw.githubusercontent.com/mkleehammer/pyodbc/master/LICENSE.txt"
