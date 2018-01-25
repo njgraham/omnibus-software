@@ -3,10 +3,12 @@ default_version "4.0.13"
 
 dependency "python"
 dependency "pip"
+
 # Requires additional dep on Linux: unixODBC
 if linux?
   dependency "unixodbc"
 end
+dependency "unixodbc"
 
 build do
   ship_license "https://raw.githubusercontent.com/mkleehammer/pyodbc/master/LICENSE.txt"
